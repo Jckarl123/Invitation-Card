@@ -1,0 +1,87 @@
+body {
+    background-image: url('https://source.unsplash.com/1600x900/?camping,nature');
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9); /* White background with some transparency */
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 0.5s; /* Add fade-in animation */
+}
+
+.header {
+    background-color: #ff69b4; /* Bright pink header */
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 2em;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.footer {
+    font-style: italic;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Button styles */
+button {
+    background-color: #ff69b4; /* Button color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+}
