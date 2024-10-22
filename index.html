@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campuestohan Resort Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>🌟 Join Us for an Adventure! 🌟</h1>
+        </div>
+        <div class="content">
+            <h2>A Day of Fun at Campuestohan Resort</h2>
+            <p><strong>Date:</strong> [10/26/24]</p>
+            <p><strong>Time:</strong> [4:00am-6:00pm]</p>
+            <p><strong>Location:</strong> Campuestohan Resort, Bacolod City</p>
+            <h3>Details:</h3>
+            <ul>
+                <li>🌊 Swimming</li>
+                <li>🎉 Team Games</li>
+                <li>🌲 Nature Walks</li>
+            </ul>
+            <h3>RSVP:</h3>
+            <p>Please let us know if you can make it by [RSVP Date]!</p>
+            <form>
+                <label for="response">Will you join us?</label><br>
+                <input type="radio" id="yes" name="response" value="yes" required>
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="response" value="no" required>
+                <label for="no">No</label><br>
+                <div id="additional-info" style="display:none; margin-top: 10px;">
+                    <p>Great! Please provide your name:</p>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="footer">
+            <p>We can't wait to share this adventure with you!</p>
+        </div>
+    </div>
+
+    <audio id="yes-sound" src="sound.mp3"></audio>
+
+    <script>
+        const yesRadio = document.getElementById('yes');
+        const additionalInfo = document.getElementById('additional-info');
+        const yesSound = document.getElementById('yes-sound');
+
+        yesRadio.addEventListener('change', () => {
+            additionalInfo.style.display = 'block';
+            yesSound.play(); // Play sound when 'Yes' is selected
+        });
+
+        const noRadio = document.getElementById('no');
+
+        noRadio.addEventListener('change', () => {
+            additionalInfo.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
